@@ -62,8 +62,3 @@ body {
 .section.dark {
   background: #111;
 }
-@media (max-width: 768px) {
-  .hero-img {
-    transform: scale(1.4);
-  }
-}

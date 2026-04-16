@@ -1,5 +1,11 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   font-family: Arial, sans-serif;
   background: black;
   color: white;
@@ -7,14 +13,17 @@ body {
 
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
 }
 
 .hero-img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: 100svh;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -22,8 +31,10 @@ body {
   position: absolute;
   bottom: 40px;
   left: 40px;
+  right: 40px;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -52,19 +63,33 @@ body {
 
 .section.dark {
   background: #111;
-}  color: black;
 }
 
-.secondary {
-  border: 1px solid white;
-  color: white;
-}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+  }
 
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
+  .hero-img {
+    height: 100svh;
+    object-position: center;
+  }
 
-.section.dark {
-  background: #111;
+  .hero-buttons {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 45px 16px;
+  }
 }

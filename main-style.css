@@ -64,7 +64,6 @@ body {
 }
 @media (max-width: 768px) {
   .hero-img {
-    width: 140%;
-    max-width: none;
+    transform: scale(1.4);
   }
 }

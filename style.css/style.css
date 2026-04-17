@@ -54,3 +54,6 @@ html, body {
   height: 100vh !important;
   background: red !important;
 }
+body {
+  background: red !important;
+}

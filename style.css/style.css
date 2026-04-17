@@ -93,3 +93,26 @@ body {
     padding: 45px 16px;
   }
 }
+/* === HERO FULLSCREEN FIX === */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+  background: rgba(6, 12, 18, 0.42);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero-content {
+  padding: 9.5rem 0 5rem;
+}
+
+@media (max-width: 760px) {
+  .hero-content {
+    padding-top: 8.25rem;
+  }
+}

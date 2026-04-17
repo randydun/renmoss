@@ -49,3 +49,8 @@ html, body {
     gap: 12px;
   }
 }
+.hero {
+  min-height: 100vh !important;
+  height: 100vh !important;
+  background: red !important;
+}

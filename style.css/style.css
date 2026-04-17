@@ -48,12 +48,15 @@ html, body {
     flex-direction: column;
     gap: 12px;
   }
+.hero-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transform: scale(1.05);
+  transition: transform 8s ease;
 }
-.hero {
-  min-height: 100vh !important;
-  height: 100vh !important;
-  background: red !important;
-}
-body {
-  background: red !important;
+
+.hero:hover .hero-img {
+  transform: scale(1.1);
 }

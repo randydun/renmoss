@@ -22,11 +22,11 @@ body {
 }
 
 .hero-buttons {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  display: flex;
-  gap: 15px;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 120px !important;
+  transform: translateX(-50%) !important;
+  z-index: 999 !important;
 }
 
 .btn {

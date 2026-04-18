@@ -16,7 +16,7 @@ body {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: right center !important;
+  object-position: 70% 30% !important;
   display: block !important;
 }
 }

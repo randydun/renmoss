@@ -7,19 +7,61 @@
   <link rel="stylesheet" href="main-style.css" />
   
   
+<style>
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .hero {
+    position: relative !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  .hero-img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 72% 18% !important;
+    display: block !important;
+  }
+
+  .hero-buttons {
+    position: absolute !important;
+    left: 48px !important;
+    bottom: 26px !important;
+    transform: none !important;
+    display: flex !important;
+    gap: 18px !important;
+    z-index: 20 !important;
+    margin: 0 !important;
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      height: 100svh !important;
+      min-height: 100svh !important;
+    }
+
+    .hero-img {
+      object-position: 74% 16% !important;
+    }
+
+    .hero-buttons {
+      left: 20px !important;
+      right: 20px !important;
+      bottom: 20px !important;
+      gap: 12px !important;
+      flex-direction: column !important;
+      width: auto !important;
+    }
+  }
 </style>
-</head>
-<body>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="https://i.imgur.com/IC08ZQz.png" class="hero-img"/>
-
-    <div class="hero-buttons">
-      <a href="#advertisers" class="btn primary">Advertise With Us</a>
-      <a href="#landowners" class="btn secondary">Landowners</a>
-    </div>
-  </section>
 
   <!-- ABOUT --><!-- ABOUT -->
 <section class="section">

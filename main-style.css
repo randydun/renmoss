@@ -12,11 +12,13 @@ body {
   background: black;
 }
 
-.hero-img {
+..hero-img {
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: 75% 28% !important;
+  object-position: 72% 38% !important;
   display: block !important;
 }
 }

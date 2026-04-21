@@ -47,25 +47,42 @@
       min-height: 100svh !important;
     }
 
+   @media screen and (max-width: 760px) {
+    .hero {
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: visible !important;
+    }
+
     .hero-img {
-      top: 0 !important;
-      left: 50% !important;
-      width: auto !important;
-      height: 100% !important;
-      min-width: 100% !important;
-      transform: translateX(-50%) !important;
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      display: block !important;
+      transform: none !important;
     }
 
     .hero-buttons {
+      position: absolute !important;
       left: 20px !important;
       right: 20px !important;
       bottom: 20px !important;
-      gap: 12px !important;
+      display: flex !important;
       flex-direction: column !important;
-      width: auto !important;
+      gap: 12px !important;
+      z-index: 30 !important;
+    }
+
+    .hero-buttons .btn {
+      width: 100% !important;
+      box-sizing: border-box !important;
+      text-align: center !important;
     }
   }
-  </style>
+</style>
 </head>
 
 <body>

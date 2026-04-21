@@ -104,7 +104,7 @@ html, body {
 }
 @media (max-width: 760px) {
   .section {
-    margin-top: 40px !important;
+    margin-top: 90px !important;
   }
 }
 @media (max-width: 768px) {

@@ -102,10 +102,7 @@ html, body {
 .secondary:hover {
   background: rgba(255, 255, 255, 0.08);
 }
-@media (max-width: 760px) {
-  .section {
-    margin-top: 90px !important;
-  }
+
 }
 @media (max-width: 768px) {
   .section {

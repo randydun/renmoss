@@ -20,7 +20,7 @@ html, body {
   width: 100%;
   max-height: 100svh;
   object-fit: contain;
-  object-position: center 45%;
+  object-position: center 72% 100%;
   display: block;
 }
 

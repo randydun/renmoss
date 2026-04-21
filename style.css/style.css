@@ -26,7 +26,7 @@ html, body {
 
 .hero-buttons {
   position: absolute;
-  bottom: 5px;
+  bottom: 1px;
   left: 24px;
   right: 24px;
   display: flex;
